@@ -1,0 +1,80 @@
+/*
+   OC CIS 155 Web Development I
+   BoC Style Sheet for table and form tags in scoring.html
+
+   Author: Peter Fox
+
+   Filename:  tables.css
+*/
+
+/* Table Styles */
+table, th, td {
+	font-size: 0.95em;
+}
+
+table {
+	margin: auto;
+	width: 600px;
+}
+
+th, td {
+	padding: 4px;
+	text-align: center;
+	border-radius: 20px;
+	border-bottom: 3px dotted purple;
+}
+
+th.top, td.top {
+	background-color: rgb(255, 226, 140);
+}
+
+th.bottom, td.bottom {
+	background-color: rgb(186, 255, 178);
+}
+
+th.sechead1 {
+	background-image: linear-gradient(darkorange, rgb(255, 226, 140));
+}
+
+th.sechead2 {
+	background-image: linear-gradient(green, rgb(186, 255, 178));
+}
+
+th.subhead {
+	font-style: italic;
+	font-size: 0.8em;
+}
+/* Form Styles */
+form {
+	margin: 20px;
+	height: 89px;
+}
+
+fieldset {
+	border: 3px dotted purple;
+	border-radius: 20px;
+	font-family: monospace;
+	font-weight: bold;
+	background-color: plum;
+}
+
+legend {
+	font-size: 1.2em;
+	padding: 5px 15px;
+	background-image: linear-gradient(plum, white);
+	border-radius: 20px;
+	border-bottom: 3px dotted purple;
+}
+
+
+input#userscore {
+	width: 30px;
+}
+
+div#cardoptions {
+	display: flex;
+}
+
+div.cardflex {
+	width: 100%;
+}

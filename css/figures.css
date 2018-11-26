@@ -1,0 +1,57 @@
+/*
+   OC CIS 155 Web Development I
+   BoC Style Sheet for figure and paragraph tags in cards_boards.html
+
+   Author: Peter Fox
+
+   Filename:  figures.css
+*/
+
+/* Figure Styles */
+figure {
+	width: 310px;
+	border: 3px dotted purple;
+	border-radius: 0px 0px 20px 20px;
+}
+figure img {
+	width: 300px;
+	margin: 5px 5px 0px 5px;
+}
+figure figcaption {
+	font-size: 0.8em;
+	font-style: italic;
+	text-align: center;
+	padding: 2px;
+}
+figure.fig1, figure.fig3, figure.fig5{
+	margin: 0px 0px 20px 20px;
+	float: right;
+}
+figure.fig2, figure.fig4, figure.fig6 {
+	margin: 0px 20px 20px 0px;
+	float: left;
+}
+
+/* Paragraph Styles */
+p.para{
+	display: block;
+}
+
+p.p1{
+	height: 271px;
+}
+p.p2{
+	height: 262px;
+}
+p.p3{
+	height: 267px;
+}
+p.p4{
+	height: 458px;
+}
+p.p5{
+	height: 231px;
+}
+p.p6{
+	height: 346px;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		OC CIS 155 Web Development I
+		Build on Concepts Project #1
+
+		This will be the homepage for my website on how to play Cribbage
+
+		Student Name: Peter Fox
+		Date: 2018-10-09
+
+		Filename: scoring.html
+		Supporting files: crib.css, tables.css
+
+		-->
+
+		<link href="css/crib.css" rel="stylesheet" />
+		<link href="css/tables.css" rel="stylesheet" />
+		<meta charset="utf-8">
+		<title>Scoring</title>
+		<meta name="description" content="About the Website Developer">
+		<meta name="keywords" content="Cribbage, Card Games, scoring, points">
+		<meta name="author" content="Peter Fox">
+	</head>
+	<body>
+		<nav id="siteNav"> <!-- Navigation sidebar code starts here -->
+			<ul>
+				<li class="newTopic"><a href="home.html">&FilledSmallSquare; Home</a></li>
+				<li class="newTopic">Setup a Cribbage Game</li>
+				<li><a href="cards_boards.html">Cards and Score Boards</a></li>
+				<li><a href="#">Number of Players</a></li>
+				<li class="newTopic">How to Play Cribbage</li>
+				<li><a href="rules.html">Rules and Play Order</a></li>
+				<li><a href="scoring.html">Scoring</a></li>
+				<li><a href="#">3 or 4 Player Variants</a></li>
+				<li><a href="#">Additional Gameplay Tips</a></li>
+				<li class="newTopic">Helpful Links</li>
+				<li><a href="http://www.cribbage.org">American Cribbage Congress</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Cribbage">Cribbage on Wikipedia</a></li>
+				<li><a href="http://cribbageclassic.com">Play Cribbage Online</a></li>
+				<li class="newTopic"><a href="about.html">&FilledSmallSquare; About</a></li>
+			</ul>
+		</nav>
+		<header> <!-- Page logo code starts here -->
+			<a href="home.html"><img src="image/header.png" alt="Learn to Play Cribbage Logo" /></a>
+		</header>
+		<section id="main"> <!-- Page content begins here -->
+			<h2>Scoring</h2>
+			<h3>Card Values</h3>
+			<ul>
+				<li>In Cribbage, Aces are low and have a value of 1.</li>
+				<li>Cards 2 through 10 count as their shown value.</li>
+				<li>All face cards have a value of 10, although their rank (J&rsaquo;Q&rsaquo;K) is still used for runs.</li>
+			</ul>
+			
+			<table>
+				<tr>
+					<th colspan="2" class="top sechead1">Scoring in Stage 2 (The Count)</th>
+				</tr>
+				<tr>
+					<th class="top subhead">Description</th>
+					<th class="top subhead">Points Gained</th>
+				</tr>
+				<tr>
+					<td class="top">Cut a Jack</td>
+					<td class="top">2 (for dealer)</td>
+				</tr>
+				<tr>
+					<td class="top">Count to 15 or 31</td>
+					<td class="top">2</td>
+				</tr>
+				<tr>
+					<td class="top">Last card played before restarting count (not 31)</td>
+					<td class="top">1</td>
+				</tr>
+				<tr>
+					<td class="top">Pair, Three-of-a-Kind, Four-of-a-Kind</td>
+					<td class="top">2, 6, 12</td>
+				</tr>
+				<tr>
+					<td class="top">Runs of 3 or more</td>
+					<td class="top">1 per card</td>
+				</tr>
+				<tr>
+					<th colspan="2" class="bottom sechead2">Scoring in Stage 3 (The Show)</th>
+				</tr>
+				<tr>
+					<th class="bottom subhead">Description</th>
+					<th class="bottom subhead">Points Gained</th>
+				</tr>
+				<tr>
+					<td class="bottom">Card values add to 15</td>
+					<td class="bottom">2</td>
+				</tr>
+				<tr>
+					<td class="bottom">Pair, Three-of-a-Kind, Four-of-a-Kind</td>
+					<td class="bottom">2, 6, 12</td>
+				</tr>
+				<tr>
+					<td class="bottom">Runs of 3 or more</td>
+					<td class="bottom">1 per card</td>
+				</tr>
+				<tr>
+					<td class="bottom">All cards are the same suit</td>
+					<td class="bottom">4 (5 if cut matches)</td>
+				</tr>
+				<tr>
+					<td class="bottom">A Jack's suit matches the suit of the cut card</td>
+					<td class="bottom">1</td>
+				</tr>
+			</table>
+			
+			<h3>Additional Scoring Info</h3>
+			<ul>
+				<li>In Stage 3, you can score points for matching suits in your hand, even if the cut card doesn't match. However, to score matching suits in the crib the cut card must match.</li>
+				<li>Runs in Stage 2 do not need to be in numerical order. For example, if 4&rsaquo;3&rsaquo;5 are played, that's three points to whoever played the 5. However, runs must be consecutive (3&rsaquo;4&rsaquo;4&rsaquo;5 does not count as a run).</li>
+				<li>Although the value of all face cards is 10, you must still match them exactly for pairs, three-of-a-kind or four-of-a-kind.
+			</ul>
+			
+			<form action="http://example.com/check" method="post">
+				<fieldset>
+					<legend>Calculate Your Hand's Score</legend>
+					<div id="cardoptions">
+						<div class="cardflex">
+							<label>1st Card</label>
+							<select>
+								<option value="1">A</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">J</option>
+								<option value="12">Q</option>
+								<option value="13">K</option>
+							</select>
+							<select>
+								<option value="diamond">&diams;</option>
+								<option value="club">&clubs;</option>
+								<option value="heart">&hearts;</option>
+								<option value="spade">&spades;</option>
+							</select><br />
+							<label>2nd Card</label>
+							<select>
+								<option value="1">A</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">J</option>
+								<option value="12">Q</option>
+								<option value="13">K</option>
+							</select>
+							<select>
+								<option value="diamond">&diams;</option>
+								<option value="club">&clubs;</option>
+								<option value="heart">&hearts;</option>
+								<option value="spade">&spades;</option>
+							</select><br />
+						</div>
+						<div class="cardflex">
+							<label>3rd Card</label>
+							<select>
+								<option value="1">A</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">J</option>
+								<option value="12">Q</option>
+								<option value="13">K</option>
+							</select>
+							<select>
+								<option value="diamond">&diams;</option>
+								<option value="club">&clubs;</option>
+								<option value="heart">&hearts;</option>
+								<option value="spade">&spades;</option>
+							</select><br />
+							<label>4th Card</label>
+							<select>
+								<option value="1">A</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">J</option>
+								<option value="12">Q</option>
+								<option value="13">K</option>
+							</select>
+							<select>
+								<option value="diamond">&diams;</option>
+								<option value="club">&clubs;</option>
+								<option value="heart">&hearts;</option>
+								<option value="spade">&spades;</option>
+							</select><br />
+						</div>
+						<div class="cardflex">
+							<label>Cut Card</label>
+							<select>
+								<option value="1">A</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">J</option>
+								<option value="12">Q</option>
+								<option value="13">K</option>
+							</select>
+							<select>
+								<option value="diamond">&diams;</option>
+								<option value="club">&clubs;</option>
+								<option value="heart">&hearts;</option>
+								<option value="spade">&spades;</option>
+							</select><br />
+						<label for="userscore">Your Score:</label>
+						<input type="text" id="userscore" placeholder="??" />
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</section>
+		<footer>
+			<p>Learn to Play Cribbage! Created Fall 2018 for CIS-155 by Peter Fox</p>
+		</footer>
+	</body>
+</html>

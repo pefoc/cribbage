@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		OC CIS 155 Web Development I
+		Build on Concepts Project #1
+
+		This will be the homepage for my website on how to play Cribbage
+
+		Student Name: Peter Fox
+		Date: 2018-10-23
+
+		Filename: cards_boards.html
+		Supporting files: crib.css, figures.css
+
+		-->
+
+		<link href="css/crib.css" rel="stylesheet" />
+		<link href="css/figures.css" rel="stylesheet" />
+		<meta charset="utf-8">
+		<title>Cribbage Cards &amp; Boards</title>
+		<meta name="description" content="Cribbage Cards and Score Boards">
+		<meta name="keywords" content="Cribbage, Card Games, Cribbage Board">
+		<meta name="author" content="Peter Fox">
+	</head>
+	<body>
+	<nav id="siteNav"> <!-- Navigation sidebar code starts here -->
+			<ul>
+				<li class="newTopic"><a href="home.html">&FilledSmallSquare; Home</a></li>
+				<li class="newTopic">Setup a Cribbage Game</li>
+				<li><a href="cards_boards.html">Cards and Score Boards</a></li>
+				<li><a href="#">Number of Players</a></li>
+				<li class="newTopic">How to Play Cribbage</li>
+				<li><a href="rules.html">Rules and Play Order</a></li>
+				<li><a href="scoring.html">Scoring</a></li>
+				<li><a href="#">3 or 4 Player Variants</a></li>
+				<li><a href="#">Additional Gameplay Tips</a></li>
+				<li class="newTopic">Helpful Links</li>
+				<li><a href="http://www.cribbage.org">American Cribbage Congress</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Cribbage">Cribbage on Wikipedia</a></li>
+				<li><a href="http://cribbageclassic.com">Play Cribbage Online</a></li>
+				<li class="newTopic"><a href="about.html">&FilledSmallSquare; About</a></li>
+			</ul>
+		</nav>
+		<header> <!-- Page logo code starts here -->
+			<a href="home.html"><img src="image/header.png" alt="Learn to Play Cribbage Logo" /></a>
+		</header>
+		<section id="main"> <!-- Page content begins here -->
+			<h2>Card and Score Board Information</h2>
+			<figure class="fig1">
+				<img src="image/52_cards.png" alt="A deck of 52 playing cards" usemap="#cardmap" />
+				<map name="cardmap">
+					<area shape="circle" coords="144,134,110" href="https://www.bicyclecards.com/article/learn-new-shuffling-tips-and-techniques/" alt="How to shuffle cards" target="_blank">
+				</map>
+				<figcaption>Click the deck of cards to learn some shuffling techniques.</figcaption>
+			</figure>
+			<p class="p1 para">
+				Cribbage requires a standard 52-card deck of playing cards. No jokers are used. You will be shuffling the entire deck frequently throughout a game, so practice your shuffling skills!
+			</p>
+			<figure class="fig2">
+				<img src="image/29_board.png" alt="A crib board shaped like the number 29"/>
+				<figcaption>Some boards are shaped like the number 29, indicating the highest you can score in one hand.</figcaption>
+			</figure>
+			<p class="p2 para">
+				Cribbage also makes use of a unique score board. There are hundreds of varieties, but they all serve the same purpose; to keep track of your score.
+			</p>
+			<figure class="fig3">
+				<img src="image/compartment.png" alt="A crib board storage compartment" />
+				<figcaption>A crib board with sliding compartment for pegs.</figcaption>
+			</figure>
+			<p class="p3 para">
+				Typically, a cribbage board is made of wood, with lots of holes drilled in a track along the top of the board. There may also be a compartment on the bottom used to keep pegs.
+			</p>
+			<figure class="fig4">
+				<img src="image/3track_board.png" alt="A cribbage board for up to three players" />
+				<figcaption>A common 3-track, 121-hole board.</figcaption>
+			</figure>
+			<p class="p4 para">
+				Holes are placed lengthwise througout the track in groups of 5. These groups may be two or three holes wide, to accomodate two or three players. Since the aim of the game is to score 121 points, there is usually 24 groups of 5 holes along a track, with a single hole at the end for the winner to place their peg into. Smaller boards may have 12 groups of 5 holes (60 total), in which case you will make two "laps" around the board before the game is finished.
+			</p>
+			<figure class="fig5">
+				<img src="image/2track_board.png" alt="A small, two player cribbage board"/>
+				<figcaption>A smaller 2-track board with 61 holes.</figcaption>
+			</figure>
+			<p class="p5 para">
+				Two pegs are used by each player. When you score points during a game, you must move the peg further back on the track in front of the other to indicate how many points you've gained. There are no penalties in cribbage that would cause you to lose points (move backwards on a track).
+			</p>
+			<figure class="fig6">
+				<img src="image/skunk.png" alt="A skunk"/>
+				<figcaption>Skunks are cute, but getting skunked in a game of cribbage isn't!</figcaption>
+			</figure>
+			<p class="p6 para">
+				Finally, you may notice some boards will mark out every five points (ie: 5, 10, 15, 20). There may also be a marking &quot;S&quot;, as well as &quot;SS&quot;. The &quot;S&quot; marks the skunk line; this is 30 points away from the last hole. If you finish the game before the opponent has crossed the skunk line, you have &quot;skunked&quot; them! In tournaments, you would score an additional game win for doing so, but in casual games it is great for bragging rights. The &quot;SS&quot; marks the double-skunk line, 60 points back from the end hole. Getting double-skunked is even worse!
+			</p>
+		</section>
+		<footer>
+			<p>Learn to Play Cribbage! Created Fall 2018 for CIS-155 by Peter Fox</p>
+		</footer>
+	</body>
+</html>

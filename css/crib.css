@@ -1,0 +1,173 @@
+/*
+   OC CIS 155 Web Development I
+   BoC Baseline Style Sheet for Scenic Byways Site
+
+   Author: Peter Fox
+
+   Filename:  crib.css
+*/
+
+/* Display HTML5 structural elements as blocks */
+
+header, section, nav, footer {
+   display: block;
+}
+
+/* Body styles */
+
+body {
+    min-width: 1000px;
+    max-width: 1000px;
+	font-family: Verdana, Geneva, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: burlywood;
+}
+
+
+/* Site Navigation Styles */
+
+nav#siteNav {
+   float: left;
+   width: 25%;
+   color: purple;
+   border: 3px dotted purple;
+   border-radius: 20px;
+   padding-left: 20px;
+}
+
+nav#siteNav ul {
+   list-style-type: square; 
+   padding-left: 0px; 
+   margin-left: 10px; 
+   font-size: 0.9em;
+}
+
+nav#siteNav a {
+   text-decoration: none; 
+   color: purple;
+}
+
+nav#siteNav a:hover {
+   text-shadow: 1px 1px 4px gray;
+}
+
+nav#siteNav li.newTopic {
+   margin: 10px 0px 10px -20px;
+   list-style-type: none;
+   text-align: center;
+   font-weight: bold;
+}
+
+
+/* Header Styles */
+
+header {
+   float: left;
+   width: 70%;
+   margin-left: 20px;
+}
+
+header img {
+	width: 100%;
+	border-radius: 20px;
+	border-bottom: 3px solid purple;
+}
+
+
+
+/* Main Section Styles */
+
+section#main {
+   float: left;
+   width: 70%;
+   margin-left: 20px;
+   height: 78vh;
+   overflow: auto;
+   background-image: url("../image/wood.jpg");
+   background-size: 100%;
+   border-radius: 20px;
+   border-bottom: 3px solid purple;
+}
+
+section#main h2 {
+   font-size: 1.4em;
+   font-style: italic;
+   text-align: center;
+   letter-spacing: -1px;
+}
+
+section#main h3 {
+	font-size: 1em;
+	text-decoration: underline;
+}
+
+section#main ul {
+	list-style: square;
+	line-height: 25px;
+}
+
+p.monospace {
+	font-family: monospace;
+	text-align: center;
+}
+
+a[title="email"] {
+	text-decoration: none;
+	font-style: italic;
+}
+
+a[title="email"]:hover {
+	text-decoration: none;
+	font-style: italic;
+	background-color: pink;
+}
+
+/* Footer Styles */
+footer {
+	background-image: linear-gradient(to right, burlywood,rgb(155,90,47),rgb(155,90,47),rgb(155,90,47),rgb(155,90,47),rgb(155,90,47),burlywood); 
+    height: 3vh;
+    margin-top: 3px;
+    margin-right: 4px;
+    float: right;
+    width: 70%;
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 0.8em;
+    font-style: italic;
+    color: white;
+}
+
+/* Column Styles */
+div#stages {
+	column-count: 3;
+	column-rule: 3px dotted purple;
+	height: 200px;
+}
+
+div#stages > h3 {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 1em;
+	text-decoration: underline;
+}
+
+/* Flexbox Styles */
+div#fleximages {
+	width: 675px;
+	margin: 10px auto;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+div#fleximages > img {
+	border: 3px dotted purple;
+	border-radius: 20px;
+	margin: 6px;
+	width: 208px;
+	height: 160px;
+}
