@@ -22,6 +22,9 @@
 		<meta name="description" content="About the Website Developer">
 		<meta name="keywords" content="Cribbage, Card Games, scoring, points">
 		<meta name="author" content="Peter Fox">
+		
+		<script src="scorecalc.js"></script>
+		
 	</head>
 	<body>
 		<nav id="siteNav"> <!-- Navigation sidebar code starts here -->
@@ -118,13 +121,13 @@
 				<li>Although the value of all face cards is 10, you must still match them exactly for pairs, three-of-a-kind or four-of-a-kind.
 			</ul>
 			
-			<form action="http://example.com/check" method="post">
+			<form name="cribbage">
 				<fieldset>
 					<legend>Calculate Your Hand's Score</legend>
 					<div id="cardoptions">
 						<div class="cardflex">
 							<label>1st Card</label>
-							<select>
+							<select name="card1">
 								<option value="1">A</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -139,14 +142,14 @@
 								<option value="12">Q</option>
 								<option value="13">K</option>
 							</select>
-							<select>
-								<option value="diamond">&diams;</option>
-								<option value="club">&clubs;</option>
-								<option value="heart">&hearts;</option>
-								<option value="spade">&spades;</option>
+							<select name="suit1">
+								<option value="Diamonds">&diams;</option>
+								<option value="Clubs">&clubs;</option>
+								<option value="Hearts">&hearts;</option>
+								<option value="Spades">&spades;</option>
 							</select><br />
 							<label>2nd Card</label>
-							<select>
+							<select name="card2">
 								<option value="1">A</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -161,16 +164,16 @@
 								<option value="12">Q</option>
 								<option value="13">K</option>
 							</select>
-							<select>
-								<option value="diamond">&diams;</option>
-								<option value="club">&clubs;</option>
-								<option value="heart">&hearts;</option>
-								<option value="spade">&spades;</option>
+							<select name="suit2">
+								<option value="Diamonds">&diams;</option>
+								<option value="Clubs">&clubs;</option>
+								<option value="Hearts">&hearts;</option>
+								<option value="Spades">&spades;</option>
 							</select><br />
 						</div>
 						<div class="cardflex">
 							<label>3rd Card</label>
-							<select>
+							<select name="card3">
 								<option value="1">A</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -185,14 +188,14 @@
 								<option value="12">Q</option>
 								<option value="13">K</option>
 							</select>
-							<select>
-								<option value="diamond">&diams;</option>
-								<option value="club">&clubs;</option>
-								<option value="heart">&hearts;</option>
-								<option value="spade">&spades;</option>
+							<select name="suit3">
+								<option value="Diamonds">&diams;</option>
+								<option value="Clubs">&clubs;</option>
+								<option value="Hearts">&hearts;</option>
+								<option value="Spades">&spades;</option>
 							</select><br />
 							<label>4th Card</label>
-							<select>
+							<select name="card4">
 								<option value="1">A</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -207,16 +210,16 @@
 								<option value="12">Q</option>
 								<option value="13">K</option>
 							</select>
-							<select>
-								<option value="diamond">&diams;</option>
-								<option value="club">&clubs;</option>
-								<option value="heart">&hearts;</option>
-								<option value="spade">&spades;</option>
+							<select name="suit4">
+								<option value="Diamonds">&diams;</option>
+								<option value="Clubs">&clubs;</option>
+								<option value="Hearts">&hearts;</option>
+								<option value="Spades">&spades;</option>
 							</select><br />
 						</div>
 						<div class="cardflex">
 							<label>Cut Card</label>
-							<select>
+							<select name="card5">
 								<option value="1">A</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -231,16 +234,22 @@
 								<option value="12">Q</option>
 								<option value="13">K</option>
 							</select>
-							<select>
-								<option value="diamond">&diams;</option>
-								<option value="club">&clubs;</option>
-								<option value="heart">&hearts;</option>
-								<option value="spade">&spades;</option>
+							<select name="suit5">
+								<option value="Diamonds">&diams;</option>
+								<option value="Clubs">&clubs;</option>
+								<option value="Hearts">&hearts;</option>
+								<option value="Spades">&spades;</option>
 							</select><br />
-						<label for="userscore">Your Score:</label>
-						<input type="text" id="userscore" placeholder="??" />
+						<input type="button" onclick="score(this.form)" value="Calculate Score"/>
+						<input type="reset" value="Reset">
 						</div>
 					</div>
+					<textarea name="scores"></textarea><br />
+					<div id="yourscore">
+					<label>Your Score:</label>
+					<input type="text" name="total" id="userscore" placeholder="??">
+					</div>
+					<p class="sourceText">Cribbage score calculator script sourced from <a href="http://boulter.com/cribbage/" target="_blank">http://boulter.com/cribbage/</a></p>
 				</fieldset>
 			</form>
 		</section>

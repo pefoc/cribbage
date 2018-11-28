@@ -45,17 +45,15 @@ th.subhead {
 	font-size: 0.8em;
 }
 /* Form Styles */
-form {
-	margin: 20px;
-	height: 89px;
-}
+
 
 fieldset {
 	border: 3px dotted purple;
 	border-radius: 20px;
 	font-family: monospace;
 	font-weight: bold;
-	background-color: plum;
+	background-color: orchid;
+	margin: 15px;
 }
 
 legend {
@@ -68,7 +66,7 @@ legend {
 
 
 input#userscore {
-	width: 30px;
+	width: 25px;
 }
 
 div#cardoptions {
@@ -77,4 +75,30 @@ div#cardoptions {
 
 div.cardflex {
 	width: 100%;
+	line-height: 30px;
+}
+
+div#yourscore {
+	margin: auto;
+	width: 130px;
+	border-bottom: 3px dotted purple;
+	padding: 5px;
+	border-radius: 20px;
+	background-image: linear-gradient(plum, white);
+}
+
+textarea {
+	background-image: linear-gradient(plum, lavender);
+	border-radius: 0px 20px 20px;
+	border-bottom: 3px dotted purple;
+	margin: 10px 5px;
+	width: 98%;
+	height: 120px;
+}
+
+p.sourceText {
+	text-align: center;
+	font-size: 0.9em;
+	color: white;
+	font-style: italic;
 }
