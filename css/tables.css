@@ -24,23 +24,23 @@ th, td {
 	border-bottom: 3px dotted purple;
 }
 
-th.top, td.top {
+.top, .top {
 	background-color: rgb(255, 226, 140);
 }
 
-th.bottom, td.bottom {
+.bottom, .bottom {
 	background-color: rgb(186, 255, 178);
 }
 
-th.sechead1 {
+.sechead1 {
 	background-image: linear-gradient(darkorange, rgb(255, 226, 140));
 }
 
-th.sechead2 {
+.sechead2 {
 	background-image: linear-gradient(green, rgb(186, 255, 178));
 }
 
-th.subhead {
+.subhead {
 	font-style: italic;
 	font-size: 0.8em;
 }
@@ -65,20 +65,20 @@ legend {
 }
 
 
-input#userscore {
+#userscore {
 	width: 25px;
 }
 
-div#cardoptions {
+#cardoptions {
 	display: flex;
 }
 
-div.cardflex {
+.cardflex {
 	width: 100%;
 	line-height: 30px;
 }
 
-div#yourscore {
+#yourscore {
 	margin: auto;
 	width: 130px;
 	border-bottom: 3px dotted purple;
@@ -96,7 +96,7 @@ textarea {
 	height: 120px;
 }
 
-p.sourceText {
+.sourceText {
 	text-align: center;
 	font-size: 0.9em;
 	color: white;
